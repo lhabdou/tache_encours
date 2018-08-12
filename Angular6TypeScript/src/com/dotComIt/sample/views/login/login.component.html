@@ -1,0 +1,21 @@
+<h1>Login View</h1>
+
+<table>
+        <tr>
+            <td>Username</td>
+            <td><input type="text"> </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password"> </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Reset" (click)="onReset()"/>
+                <input type="button" value="Login" (click)="onLogin()" />
+            </td>
+        </tr>
+</table>
+
+<h3>Aller à la page d'accueil:
+        <a [routerLink]="['/first']">Go to First View</a></h3>
