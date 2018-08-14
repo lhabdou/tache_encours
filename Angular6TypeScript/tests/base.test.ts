@@ -14,10 +14,10 @@ import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from "@ang
 
 TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
 
-import { AppComponent }  from '../src/com/dotComIt/sample/main/app.component';
-import { AppRoutingModule } from './com/dotComIt/sample/nav/routine.module.mock';
-import {FirstComponent} from "../src/com/dotComIt/sample/views/first/first.component";
-import {SecondComponent} from "../src/com/dotComIt/sample/views/second/second.component";
+import { AppComponent }  from '../src/com/dotComIt/learnWith/main/app.component';
+import { AppRoutingModule } from './com/dotComIt/learnWith/nav/routine.module.mock';
+import {FirstComponent} from "../src/com/dotComIt/learnWith/views/first/first.component";
+import {SecondComponent} from "../src/com/dotComIt/learnWith/views/second/second.component";
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 

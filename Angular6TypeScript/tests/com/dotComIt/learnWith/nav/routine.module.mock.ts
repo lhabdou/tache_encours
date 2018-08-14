@@ -7,8 +7,8 @@ import { NgModule }      from '@angular/core';
 import { Routes }   from '@angular/router';
 import { RouterTestingModule }   from '@angular/router/testing';
 
-import {FirstComponent} from "../../../../../src/com/dotComIt/sample/views/first/first.component";
-import {SecondComponent} from "../../../../../src/com/dotComIt/sample/views/second/second.component";
+import {FirstComponent} from "../../../../../src/com/dotComIt/learnWith/views/first/first.component";
+import {SecondComponent} from "../../../../../src/com/dotComIt/learnWith/views/second/second.component";
 
 const ROUTES : Routes = [
     { path: '', redirectTo: 'first', pathMatch: 'full' },

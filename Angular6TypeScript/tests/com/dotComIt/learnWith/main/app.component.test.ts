@@ -1,5 +1,5 @@
 import {async, TestBed} from '@angular/core/testing';
-import {AppComponent} from "../../../../../src/com/dotComIt/sample/main/app.component";
+import {AppComponent} from "../../../../../src/com/dotComIt/learnWith/main/app.component";
 import {Router} from "@angular/router";
 
 

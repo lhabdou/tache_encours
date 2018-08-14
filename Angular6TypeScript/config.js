@@ -97,10 +97,12 @@ var staticConfig = {
     angularLibraries : [
         'core-js/client/shim.min.js',
         'zone.js/dist/**',
+        'reflect-metadata/Reflect.js',
         'systemjs/dist/system.src.js',
         '@angular/**/bundles/**',
         'rxjs/**/*.js',
-        'tslib/**.js'
+        'tslib/**.js',
+        'ts-md5/dist/**.js'
     ],
 
     // a glob used to delete all files in the destination path before
@@ -124,8 +126,8 @@ var staticConfig = {
     // patterns for files to ignore when testing
     // defaulted to mainApp because that is replaced by base.test.ts
     defaultDirsToExclude : [
-        baseDirs.sourceRoot + baseDirs.codeRoot + '/dotComIt/sample/main/main.ts',
-        //    baseDirs.sourceRoot + baseDirs.codeRoot + '/dotComIt/sample/main/app.module.*.ts',
+        baseDirs.sourceRoot + baseDirs.codeRoot + '/dotComIt/learnWith/main/main.ts',
+        //    baseDirs.sourceRoot + baseDirs.codeRoot + '/dotComIt/learnWith/main/app.module.*.ts',
     ],
 
 };
