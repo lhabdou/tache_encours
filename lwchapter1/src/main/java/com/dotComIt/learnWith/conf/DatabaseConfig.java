@@ -12,7 +12,7 @@ import java.sql.DriverManager;
  */
 public class DatabaseConfig {
 
-	String host = "localhost";
+	String host = "jdbc:postgresql://localhost";
 	String port = "5432";
 	String database = "LearnWithApp";
 	String username = "LearnWithUser";
@@ -25,17 +25,17 @@ public class DatabaseConfig {
 		if (connection != null) {
 			return connection;
 		}
-		String connectionString = host + ":" + port + ";" + "database=" + database + ";" + "user=" + username + ";"
-				+ "password=" + password + ";";
+		String connectionString = host + ":" + port + "/"+  database;
 
 		try {
 			Class.forName("org.postgresql.Driver");
-			connection = DriverManager.getConnection(connectionString);
+			
+			return DriverManager.getConnection(connectionString, username, password);
+			
 		} catch (Exception e) {
 			System.out.println("Exception");
 			e.printStackTrace();
-		} finally {
-			closeConnection();
+			
 		}
 		
 		return connection;
