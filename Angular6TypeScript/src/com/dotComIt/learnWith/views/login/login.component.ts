@@ -7,8 +7,13 @@ import {Component} from '@angular/core';
 })
 
 export class LoginComponent {
+
+    username='';
+    password='';
+
     onReset(): void {
-        console.log('onReset');
+        this.username = '';
+        this.password = '';
     }
     onLogin(): void {
         console.log('onLogin');
