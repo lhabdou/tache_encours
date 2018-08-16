@@ -1,11 +1,10 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from "rxjs/index";
-import { ResultObjectVO } from '../../vo/ResultObjectVO';
 import { Md5 } from 'ts-md5/dist/md5';
 
 // points to location of the java services
-const servicePrefix: string = '/webapi';
+const servicePrefix: string = '/lwchapter1/webapi/';
 
 
 @Injectable()

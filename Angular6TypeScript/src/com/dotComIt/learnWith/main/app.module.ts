@@ -1,13 +1,11 @@
 import { UserModel } from './../model/usermodel';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppComponent } from './app.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from '../nav/routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './../services/java/authentication.service';
-import { FormsModule } from '@angular/forms';
-
 
 
 
@@ -16,8 +14,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule
+    HttpClientModule
   ],
   declarations: [AppComponent],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy },

@@ -1,14 +1,11 @@
-/**
- * Created by jhouser on 3/30/2017.
- */
-
-
+import { FormsModule } from '@angular/forms';
 import { NgModule }      from '@angular/core';
 import { RouterModule, Routes }   from '@angular/router';
-import {FirstComponent} from "../views/first/first.component";
-import {SecondComponent} from "../views/second/second.component";
+import { FirstComponent} from "../views/first/first.component";
+import { SecondComponent} from "../views/second/second.component";
 import { LoginComponent } from '../views/login/login.component';
 import { TasksComponent } from '../views/tasks/tasks.component';
+import { CommonModule } from '@angular/common';
 
 
 const ROUTES : Routes = [
@@ -20,7 +17,7 @@ const ROUTES : Routes = [
     { path: '**', redirectTo: 'login' },
 ];
 @NgModule({
-    imports: [ RouterModule.forRoot(ROUTES) ],
+    imports: [ RouterModule.forRoot(ROUTES), CommonModule, FormsModule ],
     declarations: [ FirstComponent, SecondComponent, LoginComponent, TasksComponent ],
     exports: [ RouterModule ]
 })
