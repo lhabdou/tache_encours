@@ -57,7 +57,10 @@ var configObject = {
     // is Angular 2 component specific and will be referenced using the styleUrls property
     // so that file can't go away and be combined
     cssSource : [baseDirs.sourceRoot + '**/*.css',
-                '!' + baseDirs.sourceRoot + baseDirs.codeRoot + '/**/*.css'],
+                '!' + baseDirs.sourceRoot + baseDirs.codeRoot + '/**/*.css',
+                'node_modules/@swimlane/ngx-datatable/release/**/*.css',
+                '!node_modules/@swimlane/ngx-datatable/release/**/app.css'
+    ],
 
     // The destination file for all the merged css
     cssDestinationFile : 'app.min.css',
@@ -102,7 +105,8 @@ var staticConfig = {
         '@angular/**/bundles/**',
         'rxjs/**/*.js',
         'tslib/**.js',
-        'ts-md5/dist/**.js'
+        'ts-md5/dist/**.js',
+        '@swimlane/ngx-datatable/release/index.js'
     ],
 
     // a glob used to delete all files in the destination path before

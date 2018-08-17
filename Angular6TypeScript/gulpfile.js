@@ -70,6 +70,16 @@ gulp.task("buildTS", ["tslint"], function() {
         .pipe(gulp.dest(config.destinationPath));
 });
 
+gulp.task('copyGridAssets', function () {
+    return gulp.src('node_modules/@swimlane/ngx-datatable/release/assets/fonts/*.*')
+               .pipe(gulp.dest(config.destinationPath + '/fonts'));
+ });
+ 
+
+ gulp.task("build", ['buildTS', 'copyJSLibraries', 'copyAngularLibraries',
+                    'copyHTML','buildCSS','copyStaticAssets',
+                    'copyGridAssets']);
+
 gulp.task('processCSS', function () {
     gulp.src(config.cssSource, { base: '.' })
         .pipe(gulpIf(config.devMode,sourcemaps.init()))
