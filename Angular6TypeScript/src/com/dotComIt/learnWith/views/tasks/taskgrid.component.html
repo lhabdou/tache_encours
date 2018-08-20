@@ -1,5 +1,22 @@
-<h1>Tasks View</h1>
-<a [routerLink]="['/login']">Go Back to Login</a>
+<div>
+        <ngx-datatable #taskGrid class="material gridStyle" [rows]="tasks" [headerHeight]="50" [rowHeight]="50" [columnModel]="'force'">
+                <ngx-datatable-column name="Description"> </ngx-datatable-column>
+                <ngx-datatable-column name="Category" prop="taskCategory"> </ngx-datatable-column>
+                <ngx-datatable-column name="Completed">
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                                <input type="checkbox" [checked]="value" />
+                        </ng-template>
+                </ngx-datatable-column>
+                <ngx-datatable-column name="Date Created" prop="dateCreated">
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                                {{value | date: 'shortDate'}}
+                        </ng-template>
+                </ngx-datatable-column>
+                <ngx-datatable-column name="Date Scheduled" prop="dateScheduled"  >
+                        <ng-template let-value="value" ngx-datatable-cell-template>
+                                {{value | date: 'shortDate'}}
+                        </ng-template>
+                </ngx-datatable-column>
 
-<h3>Aller à la page d'accueil:
-        <a [routerLink]="['/first']">Go to First View</a></h3>
+        </ngx-datatable>
+</div>

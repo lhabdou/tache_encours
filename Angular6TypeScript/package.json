@@ -20,6 +20,7 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
+    "@swimlane/ngx-datatable": "^13.1.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

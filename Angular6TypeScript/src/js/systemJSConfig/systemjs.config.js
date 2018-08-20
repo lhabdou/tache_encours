@@ -22,6 +22,7 @@
       '@angular/common/http': 'js:@angular/common/bundles/common-http.umd.js',
       '@angular/router': 'js:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'js:@angular/forms/bundles/forms.umd.js',
+      '@swimlane/ngx-datatable' : 'js:@swimlane/ngx-datatable/release/index.js',
 
       // other libraries
       'rxjs': 'js:rxjs',
